@@ -1,0 +1,9 @@
+
+
+.text{
+    color: gray;
+    left: calc(70% 50px);
+}
+.discount__center{
+    column-gap: -40px;
+}

@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --shabnam :shabnam;
+    --perNum:perNum ; 
+    --btnRadius:10px;
+    --hoverText:#0A295A;
+    --black-16:rgba(0, 0, 0, 0.16);
+}
+.wraper{
+    width: 100%;
+}
+@font-face {
+    font-family: shabnam;
+    src: url(../fonts/shabnam/Shabnam.woff);
+}
+@font-face {
+    font-family: perNum;
+    src: url(../fonts/perNum.woff);
+}

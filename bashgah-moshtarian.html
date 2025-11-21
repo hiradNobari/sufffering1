@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>باشگاه مشتریان - دسترسی</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            line-height: 1.8;
+        }
+
+     .header {
+  width: 100%;
+  height: 135px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  .header__center {
+    width: 70%;
+    height: 100%;
+    .header__center__top {
+      width: 100%;
+      height: 80px;
+      display: flex;
+      flex-flow: row wrap;
+      .logo {
+        width: 10%;
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        padding-right: 5px;
+        box-sizing: border-box;
+        align-items: center;
+        img {
+          width: 96px;
+        }
+      }
+      .search {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .search__center {
+          width: 90%;
+          height: 40px;
+          background-color: rgb(247, 248, 250);
+          border-radius: 10px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-between;
+          .label {
+            width: 10%;
+            height: 100%;
+            font-size: 40px;
+          }
+          #search {
+            width: 90%;
+            height: 100%;
+            background-color: transparent;
+            border: unset;
+
+            outline: unset;
+            font-family: var(--shabnam);
+            font-size: 16px;
+            &::placeholder {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+      .more {
+        width: 35%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        column-gap: 15px;
+        padding-right: 20px;
+        box-sizing: border-box;
+        a {
+          text-decoration: none;
+          font-family: var(--shabnam);
+          color: #a3a3a3;
+          height: 100%;
+          padding: 0 5px;
+          line-height: 80px;
+          font-size: 14px;
+          transition: 300ms;
+          &:hover {
+            font-weight: bold;
+            color: var(--hoverText);
+          }
+        }
+      }
+      .login {
+        width: 25%;
+        height: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: end;
+        padding-left: 3px;
+        box-sizing: border-box;
+        column-gap: 15px;
+
+        .basket {
+          width: 45px;
+          height: 45px;
+          background-color: #f7f8fa;
+          border-radius: 15px;
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+            0 1px 2px 0 rgba(0, 0, 0, 0.06);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          color: #fe5f55;
+          transition: 300ms;
+          position: relative;
+          &:hover {
+            color: #0a295a;
+          }
+          .circle {
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background-color: #fe5f55;
+            color: whitesmoke;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: var(--perNum);
+            position: absolute;
+            right: -7px;
+            bottom: 32px;
+            box-shadow: 0 0 4px #2c5282;
+          }
+        }
+        .login__base {
+          width: 110px;
+          height: 45px;
+          background-color: #0a5abd;
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          transition: 300ms;
+          &:hover {
+            background-color: #0a295a;
+          }
+          span {
+            font-family: var(--shabnam);
+            color: whitesmoke;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+    .header__center__bottom {
+      width: 100%;
+      height: 55px;
+      .menu {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .menu__item {
+          width: fit-content;
+          height: 100%;
+          padding: 0 5px;
+          box-sizing: border-box;
+          line-height: 55px;
+          overflow: hidden;
+          &:hover {
+            overflow: visible;
+          }
+          &:hover .line {
+            right: 0;
+          }
+          .line {
+            width: 100%;
+            height: 3px;
+            position: relative;
+            right: -100%;
+            background-color: crimson;
+            transition: 200ms;
+          }
+          .menu__item__link {
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 0 5px;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: var(--shabnam);
+            font-size: 14px;
+            color: #8b8b8b;
+            font-weight: bold;
+            transition: 200ms;
+            &:hover {
+              color: crimson;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+        .logo {
+            width: 120px;
+            height: 40px;
+          
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .nav {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .search-icon {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .sub-nav {
+            background-color: white;
+            padding: 15px 50px;
+            display: flex;
+            gap: 30px;
+            border-bottom: 1px solid #eee;
+            font-size: 13px;
+        }
+
+        .sub-nav a {
+            text-decoration: none;
+            color: #666;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .page-title {
+            text-align: center;
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 40px;
+            font-weight: bold;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #a8e6cf, #dff9fb);
+            border-radius: 20px;
+            padding: 60px;
+            margin-bottom: 50px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-illustration {
+            width: 100%;
+            height: 300px;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300"><rect fill="%23a8e6cf" width="800" height="300"/><circle cx="150" cy="150" r="30" fill="%2380cbc4" opacity="0.5"/><circle cx="250" cy="120" r="25" fill="%23b8e6d5" opacity="0.5"/><circle cx="350" cy="140" r="35" fill="%23d4af37" opacity="0.6"/><circle cx="450" cy="130" r="28" fill="%23ff7f7f" opacity="0.5"/><rect x="550" y="80" width="180" height="140" rx="15" fill="%234a90e2" opacity="0.3"/><circle cx="640" cy="150" r="60" fill="%23ff6b9d" opacity="0.4"/><circle cx="720" cy="100" r="40" fill="%239b59b6" opacity="0.5"/></svg>') center/cover;
+            margin-bottom: 30px;
+        }
+
+        .hero-description {
+            text-align: center;
+            color: #333;
+            font-size: 15px;
+            line-height: 2;
+            margin-bottom: 20px;
+        }
+
+        .hero-note {
+            text-align: center;
+            color: #666;
+            font-size: 13px;
+        }
+
+        .medal-section {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .medal-icon {
+            width: 100px;
+            height: 100px;
+            flex-shrink: 0;
+        }
+
+        .medal-content {
+            flex: 1;
+        }
+
+        .medal-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-align: right;
+        }
+
+        .medal-title.bronze {
+            color: #cd7f32;
+        }
+
+        .medal-title.silver {
+            color: #c0c0c0;
+        }
+
+        .medal-title.gold {
+            color: #ffd700;
+        }
+
+        .medal-level {
+            color: #666;
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+
+        .medal-description {
+            color: #333;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, #0066cc, #003d7a);
+            color: white;
+            border: none;
+            padding: 18px 60px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            display: block;
+            margin: 50px auto;
+            font-weight: bold;
+        }
+
+        .cta-button:hover {
+            opacity: 0.9;
+        }
+
+        .footer {
+            background: linear-gradient(135deg, #0066cc, #0099ff);
+            color: white;
+            padding: 50px;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            gap: 50px;
+        }
+
+        .footer-section {
+            flex: 1;
+        }
+
+        .footer-title {
+            font-size: 18px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .footer-links {
+            list-style: none;
+            font-size: 13px;
+            line-height: 2.5;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-logo {
+            width: 150px;
+            height: 50px;
+            background: white;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #0066cc;
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.3);
+            font-size: 12px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-icon {
+            width: 35px;
+            height: 35px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #0066cc;
+            font-size: 18px;
+        }
+    </style>
+</head>
+ <!-- #region  wraper-->
+ <div class="wraper">
+    <!-- #region header-->
+    <header class="header">
+      <div class="header__center">
+        <div class="header__center__top">
+          <div class="logo">
+            <img src="./image/header/logo.png" alt="" />
+          </div>
+          <div class="search">
+            <div class="search__center">
+              <label class="label" for="search">
+                <img src="./image/header/search.svg" alt="" />
+              </label>
+              <input
+                type="search"
+                placeholder="جستجو محصولات"
+                name="search"
+                id="search"
+              />
+            </div>
+          </div>
+          <div class="more">
+            <a href="./htmls/bashgah-moshtarian.html">باشگاه مشتریان</a>
+            <a href="./htmls/blog.html">بلاگ</a>
+            <a href="./htmls/ertebat.html"> ارتباط ما </a>
+            <a href="./htmls/darbare-ma.html"> درباره ما </a>
+          </div>
+          <div class="login">
+            <a href="#" class="basket">
+              <div class="circle">0</div>
+              <i class="fa-solid fa-cart-shopping fa-md"></i>
+            </a>
+            <a href="./htmls/sabt-nam.html" class="login__base">
+              <span>ورود و ثبت‌نام</span>
+            </a>
+          </div>
+        </div>
+        <div class="header__center__bottom">
+          <nav class="menu">
+            <div class="menu__item">
+              <a href="../index.html" class="menu__item__link">خانه</a>
+              <div class="line"></div>
+            </div>
+            <div class="menu__item">
+              <a href="./htmls/lavazem-janebi.html" class="menu__item__link"
+                >لوازم جانبی موبایل و کامپیوتر
+              </a>
+            </div>
+            <div class="menu__item">
+              <a href="./htmls/kabl.html" class="menu__item__link"> کابل - مبدل - رابط</a>
+            </div>
+            <div class="menu__item">
+              <a href="./htmls/tolid-mohtava.html" class="menu__item__link"> لوازم تولید محتوا </a>
+            </div>
+            <div class="menu__item">
+              <a href="./htmls/shabake.html" class="menu__item__link"> لوازم شبکه </a>
+            </div>
+            <div class="menu__item">
+              <a href="./htmls/consool-bazi.html" class="menu__item__link">
+                کنسول بازی و لوازم جانبی
+              </a>
+            </div>
+            <div class="menu__item">
+              <a href="./htmls/khanegi-shakhsi.html" class="menu__item__link"> لوازم خانگی و شخصی </a>
+            </div>
+            <div class="menu__item">
+              <a href="./htmls/berand-ha.html" class="menu__item__link"> برند‌ها </a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+        <h1 class="page-title">باشگاه مشتریان</h1>
+
+    <img src="../kinds-of-customer-loyalty-1024x425.jpg" alt="">
+
+        <div class="medal-section">
+            <svg class="medal-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="55" r="30" fill="#cd7f32" stroke="#8B4513" stroke-width="2"/>
+                <circle cx="50" cy="55" r="25" fill="#d4a574" opacity="0.7"/>
+                <path d="M 35 25 L 40 45 L 50 40 L 60 45 L 65 25 L 50 30 Z" fill="#8B4513"/>
+                <circle cx="50" cy="55" r="15" fill="#cd7f32" stroke="#fff" stroke-width="1"/>
+                <text x="50" y="60" text-anchor="middle" fill="white" font-size="12" font-weight="bold">3</text>
+            </svg>
+            <div class="medal-content">
+                <h2 class="medal-title bronze">سطح برنزی</h2>
+                <p class="medal-level">در این سطح:</p>
+                <p class="medal-description">
+                    - محصولات سایت (به غیر از کالاهای فروش ویژه) با ۲ درصد تخفیف به شما بشما داده خواهد شد.
+                </p>
+            </div>
+        </div>
+
+        <div class="medal-section">
+            <svg class="medal-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="55" r="30" fill="#c0c0c0" stroke="#999" stroke-width="2"/>
+                <circle cx="50" cy="55" r="25" fill="#e0e0e0" opacity="0.7"/>
+                <path d="M 35 25 L 40 45 L 50 40 L 60 45 L 65 25 L 50 30 Z" fill="#999"/>
+                <circle cx="50" cy="55" r="15" fill="#c0c0c0" stroke="#fff" stroke-width="1"/>
+                <text x="50" y="60" text-anchor="middle" fill="white" font-size="12" font-weight="bold">2</text>
+            </svg>
+            <div class="medal-content">
+                <h2 class="medal-title silver">سطح نقره‌ای</h2>
+                <p class="medal-level">در این سطح:</p>
+                <p class="medal-description">
+                    - محصولات سایت (به غیر از کالاهای فروش ویژه) با ۳ درصد تخفیف به شما داده خواهد شد.<br>
+                    - ۵٪ تخفیف ۳۰ هزار تومانی در ایتدای هر فصل در بدنلای شارژ میشود.
+                </p>
+            </div>
+        </div>
+
+        <div class="medal-section">
+            <svg class="medal-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="55" r="30" fill="#ffd700" stroke="#DAA520" stroke-width="2"/>
+                <circle cx="50" cy="55" r="25" fill="#ffed4e" opacity="0.7"/>
+                <path d="M 35 25 L 40 45 L 50 40 L 60 45 L 65 25 L 50 30 Z" fill="#DAA520"/>
+                <circle cx="50" cy="55" r="15" fill="#ffd700" stroke="#fff" stroke-width="1"/>
+                <text x="50" y="60" text-anchor="middle" fill="white" font-size="12" font-weight="bold">1</text>
+            </svg>
+            <div class="medal-content">
+                <h2 class="medal-title gold">سطح طلایی</h2>
+                <p class="medal-level">در این سطح:</p>
+                <p class="medal-description">
+                    - محصولات سایت (به غیر از کالاهای فروش ویژه) با ۶ درصد تخفیف به شما بشما داده خواهد شد.<br>
+                    - ۵٪ تخفیف ۵۰ هزار تومانی در ابتدای هر فصل در بدنلای شارژ میشود.<br>
+                    - کالاهای فروش ویژه اختصاصی در دل سایت به صورت هفتگی که فقط برای شما به این مشتریان ارائه خواهد داد.
+                </p>
+            </div>
+        </div>
+
+        <button class="cta-button">مشاهده وضعیت و ارتقا سطح باشگاه</button>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo"></div>
+                <div class="social-icons">
+              
+                    
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">فروشگاه اینترنتی دسترسی</h3>
+                <ul class="footer-links">
+                    <li>کامپیوتر و موبایل</li>
+                    <li>شبکه و ارتباطات</li>
+                    <li>نرم افزار</li>
+                    <li>شرایط و قوانین</li>
+                    <li>ارتباط با ما</li>
+                    <li>درباره ما</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">دسترسی سریع</h3>
+                <ul class="footer-links">
+                    <li><a href="#">باشگاه مشتریان</a></li>
+                    <li><a href="#">سوالات متداول</a></li>
+                    <li><a href="#">بلاگ</a></li>
+                </ul>
+            </div>
+        </div>
+       
+    </div>
+</body>
+</html>

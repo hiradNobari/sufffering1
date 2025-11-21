@@ -1,0 +1,220 @@
+.discount {
+  width: 100%;
+  height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .discount__center {
+    width: 72%;
+    border-radius: 20px;
+    height: 94%;
+    background-color: gainsboro;
+    display: flex;
+flex-flow: row wrap;
+    align-items: center;
+    .discount__center__top {
+      width: 100%;
+      height: 15%;
+      display: flex;
+      .text {
+        width: 70%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        padding-right: 40px;
+        column-gap: 10px;
+        box-sizing: border-box;
+        span {
+          font-family: var(--shabnam);
+          font-size: 35px;
+          font-weight: bold;
+          color: gray;
+        }
+      }
+      .countdown {
+        width: 30%;
+        height: 100%;
+        font-family: var(--perNum);
+        color: gray;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        padding-left: 45px;
+        box-sizing: border-box;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+    .discount__center__bottom {
+      width: 95%;
+      height: 80%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      .discount__center__bottom__item {
+        width: 25%;
+        height: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        background-color: #ffffff;
+        align-items: center;
+        padding: 16px;
+        box-sizing: border-box;
+        border-radius: 15px;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+          0 1px 2px 0 rgba(0, 0, 0, 0.06);
+        gap: 10px;
+        transition: 100ms;
+        &:hover {
+          box-shadow: 0 0 16px 0 var(--black-16);
+        }
+        img {
+          width: 200px;
+        }
+        p {
+          font-family: var(--shabnam);
+          font-size: 16px;
+          line-height: 28px;
+        }
+        .offer {
+          width: 100%;
+          height: 20%;
+          display: flex;
+          justify-content: space-between;
+          padding: 10px;
+          box-sizing: border-box;
+          align-items: end;
+          .before {
+            font-family: var(--perNum);
+            text-decoration: 1.5px solid line-through gray;
+            color: gray;
+          }
+          .after {
+            font-family: var(--perNum);
+            color: #fe5f55;
+            font-size: 14px;
+            font-weight: bold;
+          }
+        }
+        .mainPrice {
+          width: 100%;
+          height: 10%;
+          display: flex;
+          flex-flow: row wrap;
+          align-items: start;
+          justify-content: end;
+          padding: 10px;
+          box-sizing: border-box;
+          font-family: var(--perNum);
+          column-gap: 5px;
+          span {
+            color: navy;
+            font-weight: bold;
+            font-size: 18px;
+          }
+          .moft {
+            color: #3b3b3b;
+            font-size: 13px;
+            font-family: var(--shabnam);
+            font-weight: normal;
+            margin-top: 5px;
+          }
+        }
+      }
+      .discount__center__bottom__items {
+        width: 35%;
+        height: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        gap: 20px;
+        .products {
+          width: 100%;
+          height: 30%;
+          background-color:#ffffff;
+
+          border-radius: 20px;
+          display: flex;
+          flex-flow: row wrap;
+           box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+          0 1px 2px 0 rgba(0, 0, 0, 0.06);
+        transition: 100ms;
+        &:hover {
+          box-shadow: 0 0 16px 0 var(--black-16);
+        }
+          .image {
+            width: 30%;
+            img {
+              width: 100%;
+              height: 100%;
+              border-radius: 0 20px 20px 0;
+              object-fit: cover;
+            }
+          }
+          .text {
+            width: 70%;
+            height: 100%;
+            border-radius: 20px 0 0 20px;
+            padding: 16px;
+            box-sizing: border-box;
+            display: flex; 
+            flex-flow: column wrap;
+            p {
+              font-family: var(--shabnam);
+              line-height: 28px;
+              font-size: 15px;
+            }
+            .offer {
+              width: 100%;
+              height: 20%;
+              margin-bottom: 10px;
+              padding: 10px;
+              box-sizing: border-box;
+              display: flex;
+              flex-flow: row wrap;
+              justify-content: space-between;
+              .before {
+                font-family: var(--perNum);
+                text-decoration: 1.5px solid line-through gray;
+                color: gray;
+              }
+              .after {
+            font-family: var(--perNum);
+            color: #fe5f55;
+            font-size: 12px;
+            font-weight: bold;
+          }
+            }
+             .mainPrice {
+                
+          width: 100%;
+          height: 10%;
+          display: flex;
+          flex-flow: row wrap;
+          align-items: start;
+          justify-content: end;
+          padding: 10px;
+          box-sizing: border-box;
+          font-family: var(--perNum);
+          column-gap: 5px;
+          span {
+            color: navy;
+            font-weight: bold;
+            font-size: 18px;
+          }
+          .moft {
+            color: #3b3b3b;
+            font-size: 13px;
+            font-family: var(--shabnam);
+            font-weight: normal;
+            margin-top: 5px;
+          }
+        }
+
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.veblog{
+    width: 1280px;
+    height: 328px;
+    margin: 50px auto;
+    border-radius: 15px;
+    .veblog__top{
+        color: gray;
+        justify-content: end;
+    }
+    .veblog__center{
+        width: 130px;
+        height: 200px;
+        display: flex;
+       column-gap: 50px;
+     
+      .m1:hover {
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+        transform: translateY(-4px);
+    }
+    .m2{
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease;
+      } 
+      .m3:hover {
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+        transform: translateY(-4px);
+    }
+    .m4{
+       
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease;
+      }
+    }
+}

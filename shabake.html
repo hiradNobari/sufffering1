@@ -1,0 +1,2485 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروشگاه لوازم جانبی موبایل</title>
+    <link rel="shortcut icon" href="./image/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./Web/css/all.min.css" />
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./Web/css/all.min.css" />
+     <header>
+         <!-- #region  wraper-->
+    <div class="wraper">
+        <!-- #region header-->
+        <header class="header">
+          <div class="header__center">
+            <div class="header__center__top">
+              <div class="logo">
+                <img src="./image/header/logo.png" alt="" />
+              </div>
+              <div class="search">
+                <div class="search__center">
+                  <label class="label" for="search">
+                    <img src="./image/header/search.svg" alt="" />
+                  </label>
+                  <input
+                    type="search"
+                    placeholder="جستجو محصولات"
+                    name="search"
+                    id="search"
+                  />
+                </div>
+              </div>
+              <div class="more">
+                <a href="./htmls/bashgah-moshtarian.html">باشگاه مشتریان</a>
+                <a href="./htmls/blog.html">بلاگ</a>
+                <a href="./htmls/ertebat.html"> ارتباط ما </a>
+                <a href="./htmls/darbare-ma.html"> درباره ما </a>
+              </div>
+              <div class="login">
+                <a href="#" class="basket">
+                  <div class="circle">0</div>
+                  <i class="fa-solid fa-cart-shopping fa-md"></i>
+                </a>
+                <a href="./htmls/sabt-nam.html" class="login__base">
+              <p  style="background-color: #0a5abd; color: white;" >ورورد</p>
+                </a>
+              </div>
+            </div>
+            <div class="header__center__bottom">
+              <nav class="menu">
+                <div class="menu__item">
+                  <a href="../index.html" class="menu__item__link">خانه</a>
+                  <div class="line"></div>
+                </div>
+                <div class="menu__item">
+                  <a href="./htmls/lavazem-janebi.html" class="menu__item__link"
+                    >لوازم جانبی موبایل و کامپیوتر
+                  </a>
+                </div>
+                <div class="menu__item">
+                  <a href="./htmls/kabl.html" class="menu__item__link"> کابل - مبدل - رابط</a>
+                </div>
+                <div class="menu__item">
+                  <a href="./htmls/tolid-mohtava.html" class="menu__item__link"> لوازم تولید محتوا </a>
+                </div>
+                <div class="menu__item">
+                  <a href="./htmls/shabake.html" class="menu__item__link"> لوازم شبکه </a>
+                </div>
+                <div class="menu__item">
+                  <a href="./htmls/consool-bazi.html" class="menu__item__link">
+                    کنسول بازی و لوازم جانبی
+                  </a>
+                </div>
+                <div class="menu__item">
+                  <a href="./htmls/khanegi-shakhsi.html" class="menu__item__link"> لوازم خانگی و شخصی </a>
+                </div>
+                <div class="menu__item">
+                  <a href="./htmls/berand-ha.html" class="menu__item__link"> برند‌ها </a>
+                </div>
+              </nav>
+            </div>
+          </div>
+     </header>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: white;
+        }
+        .header {
+  width: 100%;
+  height: 135px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  .header__center {
+    width: 70%;
+    height: 100%;
+    .header__center__top {
+      width: 100%;
+      height: 80px;
+      display: flex;
+      flex-flow: row wrap;
+      .logo {
+        width: 10%;
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        padding-right: 5px;
+        box-sizing: border-box;
+        align-items: center;
+        img {
+          width: 96px;
+        }
+      }
+      .search {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .search__center {
+          width: 90%;
+          height: 40px;
+          background-color: rgb(247, 248, 250);
+          border-radius: 10px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-between;
+          .label {
+            width: 10%;
+            height: 100%;
+            font-size: 40px;
+          }
+          #search {
+            width: 90%;
+            height: 100%;
+            background-color: transparent;
+            border: unset;
+
+            outline: unset;
+            font-family: var(--shabnam);
+            font-size: 16px;
+            &::placeholder {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+      .more {
+        width: 35%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        column-gap: 15px;
+        padding-right: 20px;
+        box-sizing: border-box;
+        a {
+          text-decoration: none;
+          font-family: var(--shabnam);
+          color: #a3a3a3;
+          height: 100%;
+          padding: 0 5px;
+          line-height: 80px;
+          font-size: 14px;
+          transition: 300ms;
+          &:hover {
+            font-weight: bold;
+            color: var(--hoverText);
+          }
+        }
+      }
+      .login {
+        width: 25%;
+        height: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: end;
+        padding-left: 3px;
+        box-sizing: border-box;
+        column-gap: 15px;
+
+        .basket {
+          width: 45px;
+          height: 45px;
+          background-color: #f7f8fa;
+          border-radius: 15px;
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+            0 1px 2px 0 rgba(0, 0, 0, 0.06);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          color: #fe5f55;
+          transition: 300ms;
+          position: relative;
+          &:hover {
+            color: #0a295a;
+          }
+          .circle {
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background-color: #fe5f55;
+            color: whitesmoke;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: var(--perNum);
+            position: absolute;
+            right: -7px;
+            bottom: 32px;
+            box-shadow: 0 0 4px #2c5282;
+          }
+        }
+        .login__base {
+          width: 110px;
+          height: 45px;
+          background-color: #0a5abd;
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          transition: 300ms;
+          &:hover {
+            background-color: #0a295a;
+          }
+          span {
+            font-family: var(--shabnam);
+            color: whitesmoke;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+    .header__center__bottom {
+      width: 100%;
+      height: 55px;
+      .menu {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .menu__item {
+          width: fit-content;
+          height: 100%;
+          padding: 0 5px;
+          box-sizing: border-box;
+          line-height: 55px;
+          overflow: hidden;
+          &:hover {
+            overflow: visible;
+          }
+          &:hover .line {
+            right: 0;
+          }
+          .line {
+            width: 100%;
+            height: 3px;
+
+            position: relative;
+            right: -100%;
+            background-color: crimson;
+            transition: 200ms;
+          }
+          .menu__item__link {
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 0 5px;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: var(--shabnam);
+            font-size: 14px;
+            color: #8b8b8b;
+            font-weight: bold;
+            transition: 200ms;
+            &:hover {
+              color: crimson;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+        .top-bar-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .top-links a {
+            color: #666;
+            text-decoration: none;
+        }
+
+       
+       
+      .more {
+        width: 35%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        column-gap: 15px;
+        padding-right: 20px;
+        box-sizing: border-box;
+        a {
+          text-decoration: none;
+          font-family: var(--shabnam);
+          color: #a3a3a3;
+          height: 100%;
+          padding: 0 5px;
+          line-height: 80px;
+          font-size: 14px;
+          transition: 300ms;
+          &:hover {
+            font-weight: bold;
+            color: var(--hoverText);
+          }
+        }
+      }
+      .login {
+        width: 25%;
+        height: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: end;
+        padding-left: 3px;
+        box-sizing: border-box;
+        column-gap: 15px;
+
+        .basket {
+          width: 45px;
+          height: 45px;
+          background-color: #f7f8fa;
+          border-radius: 15px;
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+            0 1px 2px 0 rgba(0, 0, 0, 0.06);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          color: #fe5f55;
+          transition: 300ms;
+          position: relative;
+          &:hover {
+            color: #0a295a;
+          }
+          .circle {
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background-color: #fe5f55;
+            color: whitesmoke;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: var(--perNum);
+            position: absolute;
+            right: -7px;
+            bottom: 32px;
+            box-shadow: 0 0 4px #2c5282;
+          }
+        }
+        .login__base {
+          width: 110px;
+          height: 45px;
+          background-color: #0a5abd;
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          transition: 300ms;
+          &:hover {
+            background-color: #0a295a;
+          }
+          span {
+            font-family: var(--shabnam);
+            color: whitesmoke;
+            font-size: 15px;
+          }
+        }
+      }
+    
+    .header__center__bottom {
+      width: 100%;
+      height: 55px;
+      .menu {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .menu__item {
+          width: fit-content;
+          height: 100%;
+          padding: 0 5px;
+          box-sizing: border-box;
+          line-height: 55px;
+          overflow: hidden;
+          &:hover {
+            overflow: visible;
+          }
+          &:hover .line {
+            right: 0;
+          }
+          .line {
+            width: 100%;
+            height: 3px;
+
+            position: relative;
+            right: -100%;
+            background-color: crimson;
+            transition: 200ms;
+          }
+          .menu__item__link {
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 0 5px;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: var(--shabnam);
+            font-size: 14px;
+            color: #8b8b8b;
+            font-weight: bold;
+            transition: 200ms;
+            &:hover {
+              color: crimson;
+            }
+          }
+        }
+      }
+    }
+  
+
+
+        /* Navigation */
+      
+        .nav-menu {
+            display: flex;
+            gap: 25px;
+            padding: 12px 0;
+            overflow-x: auto;
+        }
+
+        .nav-menu a {
+            color: #333;
+            text-decoration: none;
+            font-size: 13px;
+            white-space: nowrap;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            padding: 12px 0;
+            font-size: 12px;
+            color: #666;
+            background: white;
+        }
+
+        /* Main Layout */
+        .main-layout {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 260px;
+            flex-shrink: 0;
+        }
+
+        .filter-card {
+            background: white;
+            border-radius: 8px;
+            padding: 18px;
+            margin-bottom: 15px;
+        }
+
+        .filter-title {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 12px;
+            color: #333;
+        }
+
+        .filter-list {
+            list-style: none;
+        }
+
+        .filter-list li {
+            padding: 7px 0;
+            font-size: 13px;
+            color: #555;
+            border-bottom: 1px solid #f0f0f0;
+            cursor: pointer;
+        }
+
+        .filter-list li:hover {
+            color: #2563eb;
+        }
+
+        .checkbox-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            color: #555;
+        }
+
+        .checkbox-item input {
+            width: 15px;
+            height: 15px;
+        }
+
+        .price-inputs {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+
+        .price-inputs input {
+            width: 50%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .apply-btn {
+            width: 100%;
+            padding: 8px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+        }
+
+        .color-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .color-box {
+            width: 28px;
+            height: 28px;
+            border-radius: 4px;
+            border: 2px solid #ddd;
+            cursor: pointer;
+        }
+
+        .color-black { background: #000; }
+        .color-white { background: #fff; }
+        .color-red { background: #ef4444; }
+        .color-blue { background: #3b82f6; }
+        .color-green { background: #22c55e; }
+        .color-yellow { background: #eab308; }
+        .color-gray { background: #6b7280; }
+
+        .promo-banner {
+            background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+            border-radius: 8px;
+            padding: 25px;
+            text-align: center;
+            color: white;
+        }
+
+        .promo-banner h3 {
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        .promo-banner p {
+            font-size: 13px;
+        }
+
+        /* Products Area */
+        .products-area {
+            flex: 1;
+        }
+
+        .products-header {
+            background: white;
+            border-radius: 8px;
+            padding: 18px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .products-info h1 {
+            font-size: 17px;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .products-count {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .sort-box {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 13px;
+        }
+
+        .sort-box select {
+            padding: 7px 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 13px;
+        }
+
+        /* Products Grid */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 18px;
+        }
+
+        .product-item {
+            background: white;
+            border-radius: 8px;
+            padding: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+            position: relative;
+        }
+
+        .product-item:hover {
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .product-img {
+            width: 90%;
+            height: 80px;
+
+            background: #fafafa;
+            border-radius: 6px;
+            padding: 10px;
+        }
+
+        .product-name {
+            font-size: 12px;
+            color: #333;
+            margin: 12px 0;
+            line-height: 1.5;
+            height: 36px;
+            overflow: hidden;
+        }
+
+        .product-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 12px;
+            border-top: 1px solid #f0f0f0;
+        }
+
+        .product-price {
+            font-size: 15px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .price-unit {
+            font-size: 10px;
+            color: #666;
+            margin-right: 3px;
+        }
+
+        .like-btn {
+            width: 28px;
+            height: 28px;
+            border: 1px solid #ddd;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .like-btn:hover {
+            border-color: #ef4444;
+            color: #ef4444;
+        }
+
+        .sale-badge {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            background: #ef4444;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+        }
+
+        /* Pagination */
+        .pagination-wrapper {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+            gap: 6px;
+        }
+
+        .page-btn {
+            width: 32px;
+            height: 32px;
+            border: 1px solid #ddd;
+            background: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 13px;
+        }
+
+        .page-btn.active {
+            background: #2563eb;
+            color: white;
+            border-color: #2563eb;
+        }
+
+        /* Description Section */
+        .description-box {
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 25px 0;
+        }
+
+        .description-box h2 {
+            font-size: 16px;
+            margin-bottom: 12px;
+            color: #333;
+        }
+
+        .description-box p {
+            line-height: 1.9;
+            color: #555;
+            font-size: 13px;
+            text-align: justify;
+        }
+
+        /* Footer */
+        footer {
+            background: white;
+            margin-top: 40px;
+            padding: 35px 0 15px;
+            border-top: 3px solid #2563eb;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            margin-bottom: 25px;
+        }
+
+        .footer-col h3 {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            color: #666;
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        .footer-col ul li a:hover {
+            color: #2563eb;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 15px 0;
+            border-top: 1px solid #e5e5e5;
+            color: #666;
+            font-size: 12px;
+        }
+
+        @media (max-width: 968px) {
+            .sidebar {
+                display: none;
+            }
+            .products-grid {
+                grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    
+
+   
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="main-layout">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <!-- Categories -->
+                <div class="filter-card">
+                    <div class="filter-title">دسته بندی ها</div>
+                    <ul class="filter-list">
+                        <li>کابل شارژ</li>
+                        <li>کابل تایپ سی</li>
+                        <li>کابل لایتنینگ</li>
+                        <li>شارژر دیواری</li>
+                        <li>شارژر فندکی</li>
+                        <li>پاوربانک</li>
+                        <li>هولدر موبایل</li>
+                        <li>محافظ صفحه</li>
+                        <li>قاب موبایل</li>
+                        <li>هندزفری</li>
+                    </ul>
+                </div>
+
+                <!-- Price Filter -->
+                <div class="filter-card">
+                    <div class="filter-title">محدوده قیمت</div>
+                    <div class="price-inputs">
+                        <input type="text" placeholder="از">
+                        <input type="text" placeholder="تا">
+                    </div>
+                    <button class="apply-btn">اعمال </button>
+                </div>
+
+                <!-- Brand Filter -->
+                <div class="filter-card">
+                    <div class="filter-title">برند</div>
+                    <div class="checkbox-group">
+                        <label class="checkbox-item">
+                            <input type="checkbox"> انکر
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox"> بیسوس
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox"> یوگرین
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox"> اوریکو
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox"> شیائومی
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Color Filter -->
+                <div class="filter-card">
+                    <div class="filter-title">رنگ</div>
+                    <div class="color-options">
+                        <div class="color-box color-black"></div>
+                        <div class="color-box color-white"></div>
+                        <div class="color-box color-red"></div>
+                        <div class="color-box color-blue"></div>
+                        <div class="color-box color-green"></div>
+                        <div class="color-box color-yellow"></div>
+                        <div class="color-box color-gray"></div>
+                    </div>
+                </div>
+
+                <!-- Promo Banner -->
+                <div class="promo-banner">
+                    <h3>پیشنهاد ویژه</h3>
+                    <p>تخفیف ویژه محصولات منتخب</p>
+                </div>
+            </aside>
+
+            <!-- Products Section -->
+            <main class="products-area">
+                <!-- Products Header -->
+                <div class="products-header">
+                    <div class="products-info">
+                        <h1>محصولات</h1>
+                        <div class="products-count">۱۲۴ محصول</div>
+                    </div>
+                    <div class="sort-box">
+                        <span>مرتب سازی:</span>
+                        <select>
+                            <option>جدیدترین</option>
+                            <option>پرفروش ترین</option>
+                            <option>ارزان ترین</option>
+                            <option>گران ترین</option>
+                        </select>
+                    </div>
+                </div>
+                <style>
+                    * {
+                      margin: 0;
+                      padding: 0;
+                      box-sizing: border-box;
+                    }
+                    
+                    body {
+                      font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
+                      background-color: #f5f5f5;
+                      padding: 20px;
+                    }
+                    
+                    .cards-container {
+                      display: flex;
+                      overflow-x: auto;
+                      padding: 20px 10px;
+                      gap: 15px;
+                      background-color: #fafafa;
+                      border-radius: 12px;
+                    }
+                    
+                    .product-card {
+                      flex: 0 0 auto;
+                      width: 220px;
+                      background-color: #fff;
+                      border: 1px solid #e0e0e0;
+                      border-radius: 12px;
+                      overflow: hidden;
+                      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+                      transition: all 0.3s ease;
+                      cursor: pointer;
+                    }
+                    
+                    .product-card:hover {
+                      transform: translateY(-5px);
+                      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+                    }
+                    
+                    .product-image {
+                      width: 100%;
+                      height: 200px;
+                      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      position: relative;
+                      overflow: hidden;
+                    }
+                    
+                    .product-image img {
+                      width: 100%;
+                      height: 100%;
+                      object-fit: cover;
+                    }
+                    
+                    .discount-badge {
+                      position: absolute;
+                      top: 10px;
+                      left: 10px;
+                      background-color: #ff4757;
+                      color: white;
+                      padding: 5px 10px;
+                      border-radius: 20px;
+                      font-size: 12px;
+                      font-weight: bold;
+                      box-shadow: 0 2px 5px rgba(255,71,87,0.3);
+                    }
+                    
+                    .product-info {
+                      padding: 15px;
+                    }
+                    
+                    .product-title {
+                      font-size: 15px;
+                      font-weight: bold;
+                      color: #2c3e50;
+                      margin-bottom: 8px;
+                      height: 40px;
+                      overflow: hidden;
+                      line-height: 1.3;
+                    }
+                    
+                    .product-description {
+                      font-size: 12px;
+                      color: #7f8c8d;
+                      margin-bottom: 12px;
+                      height: 35px;
+                      overflow: hidden;
+                      line-height: 1.4;
+                    }
+                    
+                    .price-section {
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-between;
+                      margin-bottom: 12px;
+                    }
+                    
+                    .price-container {
+                      display: flex;
+                      flex-direction: column;
+                      gap: 3px;
+                    }
+                    
+                    .original-price {
+                      font-size: 12px;
+                      color: #95a5a6;
+                      text-decoration: line-through;
+                    }
+                    
+                    .current-price {
+                      font-size: 18px;
+                      font-weight: bold;
+                      color: #27ae60;
+                    }
+                    
+                    .currency {
+                      font-size: 11px;
+                      margin-right: 3px;
+                    }
+                    
+                    .add-to-cart {
+                      width: 100%;
+                      padding: 10px;
+                      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                      color: white;
+                      border: none;
+                      border-radius: 8px;
+                      font-size: 13px;
+                      font-weight: bold;
+                      cursor: pointer;
+                      transition: all 0.3s ease;
+                    }
+                    
+                    .add-to-cart:hover {
+                      transform: scale(1.02);
+                      box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+                    }
+                    
+                    /* Placeholder برای تصویر */
+                    .image-placeholder {
+                      font-size: 60px;
+                      color: rgba(255,255,255,0.5);
+                    }
+                  </style>
+                </head>
+                <body>
+                  <div class="cards-container">
+                    
+                    <!-- کارت ۱ -->
+                    <div class="product-card">
+                      <div class="product-image">
+                        <div class="image-placeholder">
+                          <img src="../another-page-img/Untitled.jpg" alt="">
+                        </div>
+                        <div class="discount-badge">۲۰٪</div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-title">گوشی موبایل سامسونگ مدل A54</h3>
+                        <p class="product-description">حافظه ۱۲۸ گیگابایت، رم ۸ گیگابایت</p>
+                        <div class="price-section">
+                          <div class="price-container">
+                            <span class="original-price">۱۲,۵۰۰,۰۰۰ تومان</span>
+                            <span class="current-price">۱۰,۰۰۰,۰۰۰ <span class="currency">تومان</span></span>
+                          </div>
+                        </div>
+                        <button class="add-to-cart">افزودن به سبد خرید</button>
+                      </div>
+                    </div>
+                
+                    <!-- کارت ۲ -->
+                    <div class="product-card">
+                      <div class="product-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <div class="image-placeholder">
+                         <img src="../another-page-img/2.jpg" alt="">
+                        </div>
+                        <div class="discount-badge">۱۵٪</div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-title">لپ تاپ ایسوس مدل VivoBook</h3>
+                        <p class="product-description">پردازنده Core i5، رم ۱۶ گیگابایت</p>
+                        <div class="price-section">
+                          <div class="price-container">
+                            <span class="original-price">۲۸,۰۰۰,۰۰۰ تومان</span>
+                            <span class="current-price">۲۳,۸۰۰,۰۰۰ <span class="currency">تومان</span></span>
+                          </div>
+                        </div>
+                        <button class="add-to-cart">افزودن به سبد خرید</button>
+                      </div>
+                    </div>
+                
+                    <!-- کارت ۳ -->
+                    <div class="product-card">
+                      <div class="product-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <div class="image-placeholder">
+                         <img src="../another-page-img/3.jpg" alt="">
+                        </div>
+                        <div class="discount-badge">۳۰٪</div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-title">هدفون بلوتوثی سونی WH-1000</h3>
+                        <p class="product-description">نویز کنسلینگ، باتری ۳۰ ساعته</p>
+                        <div class="price-section">
+                          <div class="price-container">
+                            <span class="original-price">۷,۰۰۰,۰۰۰ تومان</span>
+                            <span class="current-price">۴,۹۰۰,۰۰۰ <span class="currency">تومان</span></span>
+                          </div>
+                        </div>
+                        <button class="add-to-cart">افزودن به سبد خرید</button>
+                      </div>
+                    </div>
+                
+                    <!-- کارت ۴ -->
+                    <div class="product-card">
+                      <div class="product-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                        <div class="image-placeholder">
+                <img src="../another-page-img/4.jpg" alt="">
+                        </div>
+                        <div class="discount-badge">۱۰٪</div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-title">ساعت هوشمند اپل واچ سری ۹</h3>
+                        <p class="product-description">GPS، صفحه نمایش Retina</p>
+                        <div class="price-section">
+                          <div class="price-container">
+                            <span class="original-price">۱۸,۰۰۰,۰۰۰ تومان</span>
+                            <span class="current-price">۱۶,۲۰۰,۰۰۰ <span class="currency">تومان</span></span>
+                          </div>
+                        </div>
+                        <button class="add-to-cart">افزودن به سبد خرید</button>
+                      </div>
+                    </div>
+                
+                    <!-- کارت ۵ -->
+                    <div class="product-card">
+                      <div class="product-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                        <div class="image-placeholder">
+                <img src="../another-page-img/5.jpg" alt="">
+                        </div>
+                        <div class="discount-badge">۲۵٪</div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-title">دوربین دیجیتال کانن EOS M50</h3>
+                        <p class="product-description">۲۴ مگاپیکسل، فیلمبرداری 4K</p>
+                        <div class="price-section">
+                          <div class="price-container">
+                            <span class="original-price">۳۲,۰۰۰,۰۰۰ تومان</span>
+                            <span class="current-price">۲۴,۰۰۰,۰۰۰ <span class="currency">تومان</span></span>
+                          </div>
+                        </div>
+                        <button class="add-to-cart">افزودن به سبد خرید</button>
+                      </div>
+                    </div>
+                
+                  </div>
+                
+                  <style>
+                    * {
+                      margin: 0;
+                      padding: 0;
+                      box-sizing: border-box;
+                    }
+                    
+                    body {
+                      font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
+                      background-color: #f5f5f5;
+                      padding: 20px;
+                    }
+                    
+                    .cards-container {
+                      display: flex;
+                      overflow-x: auto;
+                      padding: 20px 10px;
+                      gap: 15px;
+                      background-color: #fafafa;
+                      border-radius: 12px;
+                    }
+                    
+                    .product-card {
+                      flex: 0 0 auto;
+                      width: 220px;
+                      background-color: #fff;
+                      border: 1px solid #e0e0e0;
+                      border-radius: 12px;
+                      overflow: hidden;
+                      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+                      transition: all 0.3s ease;
+                      cursor: pointer;
+                    }
+                    
+                    .product-card:hover {
+                      transform: translateY(-5px);
+                      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+                    }
+                    
+                    .product-image {
+                      width: 100%;
+                      height: 200px;
+                      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      position: relative;
+                      overflow: hidden;
+                    }
+                    
+                    .product-image img {
+                      width: 100%;
+                      height: 100%;
+                      object-fit: cover;
+                    }
+                    
+                    .discount-badge {
+                      position: absolute;
+                      top: 10px;
+                      left: 10px;
+                      background-color: #ff4757;
+                      color: white;
+                      padding: 5px 10px;
+                      border-radius: 20px;
+                      font-size: 12px;
+                      font-weight: bold;
+                      box-shadow: 0 2px 5px rgba(255,71,87,0.3);
+                    }
+                    
+                    .product-info {
+                      padding: 15px;
+                    }
+                    
+                    .product-title {
+                      font-size: 15px;
+                      font-weight: bold;
+                      color: #2c3e50;
+                      margin-bottom: 8px;
+                      height: 40px;
+                      overflow: hidden;
+                      line-height: 1.3;
+                    }
+                    
+                    .product-description {
+                      font-size: 12px;
+                      color: #7f8c8d;
+                      margin-bottom: 12px;
+                      height: 35px;
+                      overflow: hidden;
+                      line-height: 1.4;
+                    }
+                    
+                    .price-section {
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-between;
+                      margin-bottom: 12px;
+                    }
+                    
+                    .price-container {
+                      display: flex;
+                      flex-direction: column;
+                      gap: 3px;
+                    }
+                    
+                    .original-price {
+                      font-size: 12px;
+                      color: #95a5a6;
+                      text-decoration: line-through;
+                    }
+                    
+                    .current-price {
+                      font-size: 18px;
+                      font-weight: bold;
+                      color: #27ae60;
+                    }
+                    
+                    .currency {
+                      font-size: 11px;
+                      margin-right: 3px;
+                    }
+                    
+                    .add-to-cart {
+                      width: 100%;
+                      padding: 10px;
+                      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                      color: white;
+                      border: none;
+                      border-radius: 8px;
+                      font-size: 13px;
+                      font-weight: bold;
+                      cursor: pointer;
+                      transition: all 0.3s ease;
+                    }
+                    
+                    .add-to-cart:hover {
+                      transform: scale(1.02);
+                      box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+                    }
+                    
+                    /* Placeholder برای تصویر */
+                    .image-placeholder {
+                      font-size: 60px;
+                      color: rgba(255,255,255,0.5);
+                    }
+                  </style>
+                </head>
+                <body>
+                  <div class="cards-container">
+                    
+                    <!-- کارت ۱ -->
+                    <div class="product-card">
+                      <div class="product-image">
+                        <div class="image-placeholder">
+                          <img src="./git hub culi img/Screenshot 2025-11-21 at 12-41-48 dastresi - Google Search.png" alt="">
+                        </div>
+                        <div class="discount-badge">۲۰٪</div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-title">گوشی موبایل سامسونگ مدل A54</h3>
+                        <p class="product-description">حافظه ۱۲۸ گیگابایت، رم ۸ گیگابایت</p>
+                        <div class="price-section">
+                          <div class="price-container">
+                            <span class="original-price">۱۲,۵۰۰,۰۰۰ تومان</span>
+                            <span class="current-price">۱۰,۰۰۰,۰۰۰ <span class="currency">تومان</span></span>
+                          </div>
+                        </div>
+                        <button class="add-to-cart">افزودن به سبد خرید</button>
+                      </div>
+                    </div>
+                
+                    <!-- کارت ۲ -->
+                    <div class="product-card">
+                      <div class="product-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <div class="image-placeholder">
+                         <img src="./git hub culi img/Screenshot 2025-11-21 at 12-41-48 dastresi - Google Search.png" alt="">
+                        </div>
+                        <div class="discount-badge">۱۵٪</div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-title">لپ تاپ ایسوس مدل VivoBook</h3>
+                        <p class="product-description">پردازنده Core i5، رم ۱۶ گیگابایت</p>
+                        <div class="price-section">
+                          <div class="price-container">
+                            <span class="original-price">۲۸,۰۰۰,۰۰۰ تومان</span>
+                            <span class="current-price">۲۳,۸۰۰,۰۰۰ <span class="currency">تومان</span></span>
+                          </div>
+                        </div>
+                        <button class="add-to-cart">افزودن به سبد خرید</button>
+                      </div>
+                    </div>
+                
+                    <!-- کارت ۳ -->
+                    <div class="product-card">
+                      <div class="product-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <div class="image-placeholder">
+                         <img src="./git hub culi img/Screenshot 2025-11-21 at 12-41-48 dastresi - Google Search.png" alt="">
+                        </div>
+                        <div class="discount-badge">۳۰٪</div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-title">هدفون بلوتوثی سونی WH-1000</h3>
+                        <p class="product-description">نویز کنسلینگ، باتری ۳۰ ساعته</p>
+                        <div class="price-section">
+                          <div class="price-container">
+                            <span class="original-price">۷,۰۰۰,۰۰۰ تومان</span>
+                            <span class="current-price">۴,۹۰۰,۰۰۰ <span class="currency">تومان</span></span>
+                          </div>
+                        </div>
+                        <button class="add-to-cart">افزودن به سبد خرید</button>
+                      </div>
+                    </div>
+                
+                    <!-- کارت ۴ -->
+                    <div class="product-card">
+                      <div class="product-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                        <div class="image-placeholder">
+                <img src="./git hub culi img/Screenshot 2025-11-21 at 12-41-48 dastresi - Google Search.png" alt="">
+                        </div>
+                        <div class="discount-badge">۱۰٪</div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-title">ساعت هوشمند اپل واچ سری ۹</h3>
+                        <p class="product-description">GPS، صفحه نمایش Retina</p>
+                        <div class="price-section">
+                          <div class="price-container">
+                            <span class="original-price">۱۸,۰۰۰,۰۰۰ تومان</span>
+                            <span class="current-price">۱۶,۲۰۰,۰۰۰ <span class="currency">تومان</span></span>
+                          </div>
+                        </div>
+                        <button class="add-to-cart">افزودن به سبد خرید</button>
+                      </div>
+                    </div>
+                
+                    <!-- کارت ۵ -->
+                    <div class="product-card">
+                      <div class="product-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                        <div class="image-placeholder">
+                <img src="./git hub culi img/Screenshot 2025-11-21 at 12-41-48 dastresi - Google Search.png" alt="">
+                        </div>
+                        <div class="discount-badge">۲۵٪</div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-title">دوربین دیجیتال کانن EOS M50</h3>
+                        <p class="product-description">۲۴ مگاپیکسل، فیلمبرداری 4K</p>
+                        <div class="price-section">
+                          <div class="price-container">
+                            <span class="original-price">۳۲,۰۰۰,۰۰۰ تومان</span>
+                            <span class="current-price">۲۴,۰۰۰,۰۰۰ <span class="currency">تومان</span></span>
+                          </div>
+                        </div>
+                        <button class="add-to-cart">افزودن به سبد خرید</button>
+                      </div>
+                    </div>
+                
+                  </div>
+                
+                  <style>
+                    * {
+                      margin: 0;
+                      padding: 0;
+                      box-sizing: border-box;
+                    }
+                    
+                    body {
+                      font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
+                      background-color: #f5f5f5;
+                      padding: 20px;
+                    }
+                    
+                    .cards-container {
+                      display: flex;
+                      overflow-x: auto;
+                      padding: 20px 10px;
+                      gap: 15px;
+                      background-color: #fafafa;
+                      border-radius: 12px;
+                    }
+                    
+                    .product-card {
+                      flex: 0 0 auto;
+                      width: 220px;
+                      background-color: #fff;
+                      border: 1px solid #e0e0e0;
+                      border-radius: 12px;
+                      overflow: hidden;
+                      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+                      transition: all 0.3s ease;
+                      cursor: pointer;
+                    }
+                    
+                    .product-card:hover {
+                      transform: translateY(-5px);
+                      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+                    }
+                    
+                    .product-image {
+                      width: 100%;
+                      height: 200px;
+                      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      position: relative;
+                      overflow: hidden;
+                    }
+                    
+                    .product-image img {
+                      width: 100%;
+                      height: 100%;
+                      object-fit: cover;
+                    }
+                    
+                    .discount-badge {
+                      position: absolute;
+                      top: 10px;
+                      left: 10px;
+                      background-color: #ff4757;
+                      color: white;
+                      padding: 5px 10px;
+                      border-radius: 20px;
+                      font-size: 12px;
+                      font-weight: bold;
+                      box-shadow: 0 2px 5px rgba(255,71,87,0.3);
+                    }
+                    
+                    .product-info {
+                      padding: 15px;
+                    }
+                    
+                    .product-title {
+                      font-size: 15px;
+                      font-weight: bold;
+                      color: #2c3e50;
+                      margin-bottom: 8px;
+                      height: 40px;
+                      overflow: hidden;
+                      line-height: 1.3;
+                    }
+                    
+                    .product-description {
+                      font-size: 12px;
+                      color: #7f8c8d;
+                      margin-bottom: 12px;
+                      height: 35px;
+                      overflow: hidden;
+                      line-height: 1.4;
+                    }
+                    
+                    .price-section {
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-between;
+                      margin-bottom: 12px;
+                    }
+                    
+                    .price-container {
+                      display: flex;
+                      flex-direction: column;
+                      gap: 3px;
+                    }
+                    
+                    .original-price {
+                      font-size: 12px;
+                      color: #95a5a6;
+                      text-decoration: line-through;
+                    }
+                    
+                    .current-price {
+                      font-size: 18px;
+                      font-weight: bold;
+                      color: #27ae60;
+                    }
+                    
+                    .currency {
+                      font-size: 11px;
+                      margin-right: 3px;
+                    }
+                    
+                    .add-to-cart {
+                      width: 100%;
+                      padding: 10px;
+                      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                      color: white;
+                      border: none;
+                      border-radius: 8px;
+                      font-size: 13px;
+                      font-weight: bold;
+                      cursor: pointer;
+                      transition: all 0.3s ease;
+                    }
+                    
+                    .add-to-cart:hover {
+                      transform: scale(1.02);
+                      box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+                    }
+                    
+                    /* Placeholder برای تصویر */
+                    .image-placeholder {
+                      font-size: 60px;
+                      color: rgba(255,255,255,0.5);
+                    }
+                  </style>
+                </head>
+                <body>
+                  <div class="cards-container">
+                    
+                    <!-- کارت ۱ -->
+                    <div class="product-card">
+                      <div class="product-image">
+                        <div class="image-placeholder">
+                          <img src="./git hub culi img/Screenshot 2025-11-21 at 12-41-48 dastresi - Google Search.png" alt="">
+                        </div>
+                        <div class="discount-badge">۲۰٪</div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-title">گوشی موبایل سامسونگ مدل A54</h3>
+                        <p class="product-description">حافظه ۱۲۸ گیگابایت، رم ۸ گیگابایت</p>
+                        <div class="price-section">
+                          <div class="price-container">
+                            <span class="original-price">۱۲,۵۰۰,۰۰۰ تومان</span>
+                            <span class="current-price">۱۰,۰۰۰,۰۰۰ <span class="currency">تومان</span></span>
+                          </div>
+                        </div>
+                        <button class="add-to-cart">افزودن به سبد خرید</button>
+                      </div>
+                    </div>
+                
+                    <!-- کارت ۲ -->
+                    <div class="product-card">
+                      <div class="product-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <div class="image-placeholder">
+                         <img src="./git hub culi img/Screenshot 2025-11-21 at 12-41-48 dastresi - Google Search.png" alt="">
+                        </div>
+                        <div class="discount-badge">۱۵٪</div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-title">لپ تاپ ایسوس مدل VivoBook</h3>
+                        <p class="product-description">پردازنده Core i5، رم ۱۶ گیگابایت</p>
+                        <div class="price-section">
+                          <div class="price-container">
+                            <span class="original-price">۲۸,۰۰۰,۰۰۰ تومان</span>
+                            <span class="current-price">۲۳,۸۰۰,۰۰۰ <span class="currency">تومان</span></span>
+                          </div>
+                        </div>
+                        <button class="add-to-cart">افزودن به سبد خرید</button>
+                      </div>
+                    </div>
+                
+                    <!-- کارت ۳ -->
+                    <div class="product-card">
+                      <div class="product-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <div class="image-placeholder">
+                         <img src="./git hub culi img/Screenshot 2025-11-21 at 12-41-48 dastresi - Google Search.png" alt="">
+                        </div>
+                        <div class="discount-badge">۳۰٪</div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-title">هدفون بلوتوثی سونی WH-1000</h3>
+                        <p class="product-description">نویز کنسلینگ، باتری ۳۰ ساعته</p>
+                        <div class="price-section">
+                          <div class="price-container">
+                            <span class="original-price">۷,۰۰۰,۰۰۰ تومان</span>
+                            <span class="current-price">۴,۹۰۰,۰۰۰ <span class="currency">تومان</span></span>
+                          </div>
+                        </div>
+                        <button class="add-to-cart">افزودن به سبد خرید</button>
+                      </div>
+                    </div>
+                
+                    <!-- کارت ۴ -->
+                    <div class="product-card">
+                      <div class="product-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                        <div class="image-placeholder">
+                <img src="./git hub culi img/Screenshot 2025-11-21 at 12-41-48 dastresi - Google Search.png" alt="">
+                        </div>
+                        <div class="discount-badge">۱۰٪</div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-title">ساعت هوشمند اپل واچ سری ۹</h3>
+                        <p class="product-description">GPS، صفحه نمایش Retina</p>
+                        <div class="price-section">
+                          <div class="price-container">
+                            <span class="original-price">۱۸,۰۰۰,۰۰۰ تومان</span>
+                            <span class="current-price">۱۶,۲۰۰,۰۰۰ <span class="currency">تومان</span></span>
+                          </div>
+                        </div>
+                        <button class="add-to-cart">افزودن به سبد خرید</button>
+                      </div>
+                    </div>
+                
+                    <!-- کارت ۵ -->
+                    <div class="product-card">
+                      <div class="product-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                        <div class="image-placeholder">
+                <img src="./git hub culi img/Screenshot 2025-11-21 at 12-41-48 dastresi - Google Search.png" alt="">
+                        </div>
+                        <div class="discount-badge">۲۵٪</div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-title">دوربین دیجیتال کانن EOS M50</h3>
+                        <p class="product-description">۲۴ مگاپیکسل، فیلمبرداری 4K</p>
+                        <div class="price-section">
+                          <div class="price-container">
+                            <span class="original-price">۳۲,۰۰۰,۰۰۰ تومان</span>
+                            <span class="current-price">۲۴,۰۰۰,۰۰۰ <span class="currency">تومان</span></span>
+                          </div>
+                        </div>
+                        <button class="add-to-cart">افزودن به سبد خرید</button>
+                      </div>
+                    </div>
+                
+                  </div>
+                
+                  <style>
+                    * {
+                      margin: 0;
+                      padding: 0;
+                      box-sizing: border-box;
+                    }
+                    
+                    body {
+                      font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
+                      background-color: #f5f5f5;
+                      padding: 20px;
+                    }
+                    
+                    .cards-container {
+                      display: flex;
+                      overflow-x: auto;
+                      padding: 20px 10px;
+                      gap: 15px;
+                      background-color: #fafafa;
+                      border-radius: 12px;
+                    }
+                    
+                    .product-card {
+                      flex: 0 0 auto;
+                      width: 220px;
+                      background-color: #fff;
+                      border: 1px solid #e0e0e0;
+                      border-radius: 12px;
+                      overflow: hidden;
+                      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+                      transition: all 0.3s ease;
+                      cursor: pointer;
+                    }
+                    
+                    .product-card:hover {
+                      transform: translateY(-5px);
+                      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+                    }
+                    
+                    .product-image {
+                      width: 100%;
+                      height: 200px;
+                      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      position: relative;
+                      overflow: hidden;
+                    }
+                    
+                    .product-image img {
+                      width: 100%;
+                      height: 100%;
+                      object-fit: cover;
+                    }
+                    
+                    .discount-badge {
+                      position: absolute;
+                      top: 10px;
+                      left: 10px;
+                      background-color: #ff4757;
+                      color: white;
+                      padding: 5px 10px;
+                      border-radius: 20px;
+                      font-size: 12px;
+                      font-weight: bold;
+                      box-shadow: 0 2px 5px rgba(255,71,87,0.3);
+                    }
+                    
+                    .product-info {
+                      padding: 15px;
+                    }
+                    
+                    .product-title {
+                      font-size: 15px;
+                      font-weight: bold;
+                      color: #2c3e50;
+                      margin-bottom: 8px;
+                      height: 40px;
+                      overflow: hidden;
+                      line-height: 1.3;
+                    }
+                    
+                    .product-description {
+                      font-size: 12px;
+                      color: #7f8c8d;
+                      margin-bottom: 12px;
+                      height: 35px;
+                      overflow: hidden;
+                      line-height: 1.4;
+                    }
+                    
+                    .price-section {
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-between;
+                      margin-bottom: 12px;
+                    }
+                    
+                    .price-container {
+                      display: flex;
+                      flex-direction: column;
+                      gap: 3px;
+                    }
+                    
+                    .original-price {
+                      font-size: 12px;
+                      color: #95a5a6;
+                      text-decoration: line-through;
+                    }
+                    
+                    .current-price {
+                      font-size: 18px;
+                      font-weight: bold;
+                      color: #27ae60;
+                    }
+                    
+                    .currency {
+                      font-size: 11px;
+                      margin-right: 3px;
+                    }
+                    
+                    .add-to-cart {
+                      width: 100%;
+                      padding: 10px;
+                      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                      color: white;
+                      border: none;
+                      border-radius: 8px;
+                      font-size: 13px;
+                      font-weight: bold;
+                      cursor: pointer;
+                      transition: all 0.3s ease;
+                    }
+                    
+                    .add-to-cart:hover {
+                      transform: scale(1.02);
+                      box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+                    }
+                    
+                    /* Placeholder برای تصویر */
+                    .image-placeholder {
+                      font-size: 60px;
+                      color: rgba(255,255,255,0.5);
+                    }
+                  </style>
+                </head>
+                <body>
+                  <div class="cards-container">
+                    
+                    <!-- کارت ۱ -->
+                    <div class="product-card">
+                      <div class="product-image">
+                        <div class="image-placeholder">
+                          <img src="./git hub culi img/Screenshot 2025-11-21 at 12-41-48 dastresi - Google Search.png" alt="">
+                        </div>
+                        <div class="discount-badge">۲۰٪</div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-title">گوشی موبایل سامسونگ مدل A54</h3>
+                        <p class="product-description">حافظه ۱۲۸ گیگابایت، رم ۸ گیگابایت</p>
+                        <div class="price-section">
+                          <div class="price-container">
+                            <span class="original-price">۱۲,۵۰۰,۰۰۰ تومان</span>
+                            <span class="current-price">۱۰,۰۰۰,۰۰۰ <span class="currency">تومان</span></span>
+                          </div>
+                        </div>
+                        <button class="add-to-cart">افزودن به سبد خرید</button>
+                      </div>
+                    </div>
+                
+                    <!-- کارت ۲ -->
+                    <div class="product-card">
+                      <div class="product-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <div class="image-placeholder">
+                         <img src="./git hub culi img/Screenshot 2025-11-21 at 12-41-48 dastresi - Google Search.png" alt="">
+                        </div>
+                        <div class="discount-badge">۱۵٪</div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-title">لپ تاپ ایسوس مدل VivoBook</h3>
+                        <p class="product-description">پردازنده Core i5، رم ۱۶ گیگابایت</p>
+                        <div class="price-section">
+                          <div class="price-container">
+                            <span class="original-price">۲۸,۰۰۰,۰۰۰ تومان</span>
+                            <span class="current-price">۲۳,۸۰۰,۰۰۰ <span class="currency">تومان</span></span>
+                          </div>
+                        </div>
+                        <button class="add-to-cart">افزودن به سبد خرید</button>
+                      </div>
+                    </div>
+                
+                    <!-- کارت ۳ -->
+                    <div class="product-card">
+                      <div class="product-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <div class="image-placeholder">
+                         <img src="./git hub culi img/Screenshot 2025-11-21 at 12-41-48 dastresi - Google Search.png" alt="">
+                        </div>
+                        <div class="discount-badge">۳۰٪</div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-title">هدفون بلوتوثی سونی WH-1000</h3>
+                        <p class="product-description">نویز کنسلینگ، باتری ۳۰ ساعته</p>
+                        <div class="price-section">
+                          <div class="price-container">
+                            <span class="original-price">۷,۰۰۰,۰۰۰ تومان</span>
+                            <span class="current-price">۴,۹۰۰,۰۰۰ <span class="currency">تومان</span></span>
+                          </div>
+                        </div>
+                        <button class="add-to-cart">افزودن به سبد خرید</button>
+                      </div>
+                    </div>
+                
+                    <!-- کارت ۴ -->
+                    <div class="product-card">
+                      <div class="product-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                        <div class="image-placeholder">
+                <img src="./git hub culi img/Screenshot 2025-11-21 at 12-41-48 dastresi - Google Search.png" alt="">
+                        </div>
+                        <div class="discount-badge">۱۰٪</div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-title">ساعت هوشمند اپل واچ سری ۹</h3>
+                        <p class="product-description">GPS، صفحه نمایش Retina</p>
+                        <div class="price-section">
+                          <div class="price-container">
+                            <span class="original-price">۱۸,۰۰۰,۰۰۰ تومان</span>
+                            <span class="current-price">۱۶,۲۰۰,۰۰۰ <span class="currency">تومان</span></span>
+                          </div>
+                        </div>
+                        <button class="add-to-cart">افزودن به سبد خرید</button>
+                      </div>
+                    </div>
+                
+                    <!-- کارت ۵ -->
+                    <div class="product-card">
+                      <div class="product-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                        <div class="image-placeholder">
+                <img src="./git hub culi img/Screenshot 2025-11-21 at 12-41-48 dastresi - Google Search.png" alt="">
+                        </div>
+                        <div class="discount-badge">۲۵٪</div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-title">دوربین دیجیتال کانن EOS M50</h3>
+                        <p class="product-description">۲۴ مگاپیکسل، فیلمبرداری 4K</p>
+                        <div class="price-section">
+                          <div class="price-container">
+                            <span class="original-price">۳۲,۰۰۰,۰۰۰ تومان</span>
+                            <span class="current-price">۲۴,۰۰۰,۰۰۰ <span class="currency">تومان</span></span>
+                          </div>
+                        </div>
+                        <button class="add-to-cart">افزودن به سبد خرید</button>
+                      </div>
+                    </div>
+                
+                  </div>
+                
+                  <style>
+                    * {
+                      margin: 0;
+                      padding: 0;
+                      box-sizing: border-box;
+                    }
+                    
+                    body {
+                      font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
+                      background-color: #f5f5f5;
+                      padding: 20px;
+                    }
+                    
+                    .cards-container {
+                      display: flex;
+                      overflow-x: auto;
+                      padding: 20px 10px;
+                      gap: 15px;
+                      background-color: #fafafa;
+                      border-radius: 12px;
+                    }
+                    
+                    .product-card {
+                      flex: 0 0 auto;
+                      width: 220px;
+                      background-color: #fff;
+                      border: 1px solid #e0e0e0;
+                      border-radius: 12px;
+                      overflow: hidden;
+                      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+                      transition: all 0.3s ease;
+                      cursor: pointer;
+                    }
+                    
+                    .product-card:hover {
+                      transform: translateY(-5px);
+                      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+                    }
+                    
+                    .product-image {
+                      width: 100%;
+                      height: 200px;
+                      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      position: relative;
+                      overflow: hidden;
+                    }
+                    
+                    .product-image img {
+                      width: 100%;
+                      height: 100%;
+                      object-fit: cover;
+                    }
+                    
+                    .discount-badge {
+                      position: absolute;
+                      top: 10px;
+                      left: 10px;
+                      background-color: #ff4757;
+                      color: white;
+                      padding: 5px 10px;
+                      border-radius: 20px;
+                      font-size: 12px;
+                      font-weight: bold;
+                      box-shadow: 0 2px 5px rgba(255,71,87,0.3);
+                    }
+                    
+                    .product-info {
+                      padding: 15px;
+                    }
+                    
+                    .product-title {
+                      font-size: 15px;
+                      font-weight: bold;
+                      color: #2c3e50;
+                      margin-bottom: 8px;
+                      height: 40px;
+                      overflow: hidden;
+                      line-height: 1.3;
+                    }
+                    
+                    .product-description {
+                      font-size: 12px;
+                      color: #7f8c8d;
+                      margin-bottom: 12px;
+                      height: 35px;
+                      overflow: hidden;
+                      line-height: 1.4;
+                    }
+                    
+                    .price-section {
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-between;
+                      margin-bottom: 12px;
+                    }
+                    
+                    .price-container {
+                      display: flex;
+                      flex-direction: column;
+                      gap: 3px;
+                    }
+                    
+                    .original-price {
+                      font-size: 12px;
+                      color: #95a5a6;
+                      text-decoration: line-through;
+                    }
+                    
+                    .current-price {
+                      font-size: 18px;
+                      font-weight: bold;
+                      color: #27ae60;
+                    }
+                    
+                    .currency {
+                      font-size: 11px;
+                      margin-right: 3px;
+                    }
+                    
+                    .add-to-cart {
+                      width: 100%;
+                      padding: 10px;
+                      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                      color: white;
+                      border: none;
+                      border-radius: 8px;
+                      font-size: 13px;
+                      font-weight: bold;
+                      cursor: pointer;
+                      transition: all 0.3s ease;
+                    }
+                    
+                    .add-to-cart:hover {
+                      transform: scale(1.02);
+                      box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+                    }
+                    
+                    /* Placeholder برای تصویر */
+                    .image-placeholder {
+                      font-size: 60px;
+                      color: rgba(255,255,255,0.5);
+                    }
+                  </style>
+                </head>
+                <body>
+                  <div class="cards-container">
+                    
+                    <!-- کارت ۱ -->
+                    <div class="product-card">
+                      <div class="product-image">
+                        <div class="image-placeholder">
+                          <img src="./git hub culi img/Screenshot 2025-11-21 at 12-41-48 dastresi - Google Search.png" alt="">
+                        </div>
+                        <div class="discount-badge">۲۰٪</div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-title">گوشی موبایل سامسونگ مدل A54</h3>
+                        <p class="product-description">حافظه ۱۲۸ گیگابایت، رم ۸ گیگابایت</p>
+                        <div class="price-section">
+                          <div class="price-container">
+                            <span class="original-price">۱۲,۵۰۰,۰۰۰ تومان</span>
+                            <span class="current-price">۱۰,۰۰۰,۰۰۰ <span class="currency">تومان</span></span>
+                          </div>
+                        </div>
+                        <button class="add-to-cart">افزودن به سبد خرید</button>
+                      </div>
+                    </div>
+                
+                    <!-- کارت ۲ -->
+                    <div class="product-card">
+                      <div class="product-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <div class="image-placeholder">
+                         <img src="./git hub culi img/Screenshot 2025-11-21 at 12-41-48 dastresi - Google Search.png" alt="">
+                        </div>
+                        <div class="discount-badge">۱۵٪</div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-title">لپ تاپ ایسوس مدل VivoBook</h3>
+                        <p class="product-description">پردازنده Core i5، رم ۱۶ گیگابایت</p>
+                        <div class="price-section">
+                          <div class="price-container">
+                            <span class="original-price">۲۸,۰۰۰,۰۰۰ تومان</span>
+                            <span class="current-price">۲۳,۸۰۰,۰۰۰ <span class="currency">تومان</span></span>
+                          </div>
+                        </div>
+                        <button class="add-to-cart">افزودن به سبد خرید</button>
+                      </div>
+                    </div>
+                
+                    <!-- کارت ۳ -->
+                    <div class="product-card">
+                      <div class="product-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <div class="image-placeholder">
+                         <img src="./git hub culi img/Screenshot 2025-11-21 at 12-41-48 dastresi - Google Search.png" alt="">
+                        </div>
+                        <div class="discount-badge">۳۰٪</div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-title">هدفون بلوتوثی سونی WH-1000</h3>
+                        <p class="product-description">نویز کنسلینگ، باتری ۳۰ ساعته</p>
+                        <div class="price-section">
+                          <div class="price-container">
+                            <span class="original-price">۷,۰۰۰,۰۰۰ تومان</span>
+                            <span class="current-price">۴,۹۰۰,۰۰۰ <span class="currency">تومان</span></span>
+                          </div>
+                        </div>
+                        <button class="add-to-cart">افزودن به سبد خرید</button>
+                      </div>
+                    </div>
+                
+                    <!-- کارت ۴ -->
+                    <div class="product-card">
+                      <div class="product-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                        <div class="image-placeholder">
+                <img src="./git hub culi img/Screenshot 2025-11-21 at 12-41-48 dastresi - Google Search.png" alt="">
+                        </div>
+                        <div class="discount-badge">۱۰٪</div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-title">ساعت هوشمند اپل واچ سری ۹</h3>
+                        <p class="product-description">GPS، صفحه نمایش Retina</p>
+                        <div class="price-section">
+                          <div class="price-container">
+                            <span class="original-price">۱۸,۰۰۰,۰۰۰ تومان</span>
+                            <span class="current-price">۱۶,۲۰۰,۰۰۰ <span class="currency">تومان</span></span>
+                          </div>
+                        </div>
+                        <button class="add-to-cart">افزودن به سبد خرید</button>
+                      </div>
+                    </div>
+                
+                    <!-- کارت ۵ -->
+                    <div class="product-card">
+                      <div class="product-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                        <div class="image-placeholder">
+                <img src="./git hub culi img/Screenshot 2025-11-21 at 12-41-48 dastresi - Google Search.png" alt="">
+                        </div>
+                        <div class="discount-badge">۲۵٪</div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-title">دوربین دیجیتال کانن EOS M50</h3>
+                        <p class="product-description">۲۴ مگاپیکسل، فیلمبرداری 4K</p>
+                        <div class="price-section">
+                          <div class="price-container">
+                            <span class="original-price">۳۲,۰۰۰,۰۰۰ تومان</span>
+                            <span class="current-price">۲۴,۰۰۰,۰۰۰ <span class="currency">تومان</span></span>
+                          </div>
+                        </div>
+                        <button class="add-to-cart">افزودن به سبد خرید</button>
+                      </div>
+                    </div>
+                
+                  </div>
+                
+                  <style>
+                    * {
+                      margin: 0;
+                      padding: 0;
+                      box-sizing: border-box;
+                    }
+                    
+                    body {
+                      font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
+                      background-color: #f5f5f5;
+                      padding: 20px;
+                    }
+                    
+                    .cards-container {
+                      display: flex;
+                      overflow-x: auto;
+                      padding: 20px 10px;
+                      gap: 15px;
+                      background-color: #fafafa;
+                      border-radius: 12px;
+                    }
+                    
+                    .product-card {
+                      flex: 0 0 auto;
+                      width: 220px;
+                      background-color: #fff;
+                      border: 1px solid #e0e0e0;
+                      border-radius: 12px;
+                      overflow: hidden;
+                      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+                      transition: all 0.3s ease;
+                      cursor: pointer;
+                    }
+                    
+                    .product-card:hover {
+                      transform: translateY(-5px);
+                      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+                    }
+                    
+                    .product-image {
+                      width: 100%;
+                      height: 200px;
+                      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      position: relative;
+                      overflow: hidden;
+                    }
+                    
+                    .product-image img {
+                      width: 100%;
+                      height: 100%;
+                      object-fit: cover;
+                    }
+                    
+                    .discount-badge {
+                      position: absolute;
+                      top: 10px;
+                      left: 10px;
+                      background-color: #ff4757;
+                      color: white;
+                      padding: 5px 10px;
+                      border-radius: 20px;
+                      font-size: 12px;
+                      font-weight: bold;
+                      box-shadow: 0 2px 5px rgba(255,71,87,0.3);
+                    }
+                    
+                    .product-info {
+                      padding: 15px;
+                    }
+                    
+                    .product-title {
+                      font-size: 15px;
+                      font-weight: bold;
+                      color: #2c3e50;
+                      margin-bottom: 8px;
+                      height: 40px;
+                      overflow: hidden;
+                      line-height: 1.3;
+                    }
+                    
+                    .product-description {
+                      font-size: 12px;
+                      color: #7f8c8d;
+                      margin-bottom: 12px;
+                      height: 35px;
+                      overflow: hidden;
+                      line-height: 1.4;
+                    }
+                    
+                    .price-section {
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-between;
+                      margin-bottom: 12px;
+                    }
+                    
+                    .price-container {
+                      display: flex;
+                      flex-direction: column;
+                      gap: 3px;
+                    }
+                    
+                    .original-price {
+                      font-size: 12px;
+                      color: #95a5a6;
+                      text-decoration: line-through;
+                    }
+                    
+                    .current-price {
+                      font-size: 18px;
+                      font-weight: bold;
+                      color: #27ae60;
+                    }
+                    
+                    .currency {
+                      font-size: 11px;
+                      margin-right: 3px;
+                    }
+                    
+                    .add-to-cart {
+                      width: 100%;
+                      padding: 10px;
+                      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                      color: white;
+                      border: none;
+                      border-radius: 8px;
+                      font-size: 13px;
+                      font-weight: bold;
+                      cursor: pointer;
+                      transition: all 0.3s ease;
+                    }
+                    
+                    .add-to-cart:hover {
+                      transform: scale(1.02);
+                      box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+                    }
+                    
+                    /* Placeholder برای تصویر */
+                    .image-placeholder {
+                      font-size: 60px;
+                      color: rgba(255,255,255,0.5);
+                    }
+                  </style>
+                </head>
+                <body>
+                  <div class="cards-container">
+                    
+                    <!-- کارت ۱ -->
+                    <div class="product-card">
+                      <div class="product-image">
+                        <div class="image-placeholder">
+                          <img src="./git hub culi img/Screenshot 2025-11-21 at 12-41-48 dastresi - Google Search.png" alt="">
+                        </div>
+                        <div class="discount-badge">۲۰٪</div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-title">گوشی موبایل سامسونگ مدل A54</h3>
+                        <p class="product-description">حافظه ۱۲۸ گیگابایت، رم ۸ گیگابایت</p>
+                        <div class="price-section">
+                          <div class="price-container">
+                            <span class="original-price">۱۲,۵۰۰,۰۰۰ تومان</span>
+                            <span class="current-price">۱۰,۰۰۰,۰۰۰ <span class="currency">تومان</span></span>
+                          </div>
+                        </div>
+                        <button class="add-to-cart">افزودن به سبد خرید</button>
+                      </div>
+                    </div>
+                
+                    <!-- کارت ۲ -->
+                    <div class="product-card">
+                      <div class="product-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <div class="image-placeholder">
+                         <img src="./git hub culi img/Screenshot 2025-11-21 at 12-41-48 dastresi - Google Search.png" alt="">
+                        </div>
+                        <div class="discount-badge">۱۵٪</div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-title">لپ تاپ ایسوس مدل VivoBook</h3>
+                        <p class="product-description">پردازنده Core i5، رم ۱۶ گیگابایت</p>
+                        <div class="price-section">
+                          <div class="price-container">
+                            <span class="original-price">۲۸,۰۰۰,۰۰۰ تومان</span>
+                            <span class="current-price">۲۳,۸۰۰,۰۰۰ <span class="currency">تومان</span></span>
+                          </div>
+                        </div>
+                        <button class="add-to-cart">افزودن به سبد خرید</button>
+                      </div>
+                    </div>
+                
+                    <!-- کارت ۳ -->
+                    <div class="product-card">
+                      <div class="product-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <div class="image-placeholder">
+                         <img src="./git hub culi img/Screenshot 2025-11-21 at 12-41-48 dastresi - Google Search.png" alt="">
+                        </div>
+                        <div class="discount-badge">۳۰٪</div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-title">هدفون بلوتوثی سونی WH-1000</h3>
+                        <p class="product-description">نویز کنسلینگ، باتری ۳۰ ساعته</p>
+                        <div class="price-section">
+                          <div class="price-container">
+                            <span class="original-price">۷,۰۰۰,۰۰۰ تومان</span>
+                            <span class="current-price">۴,۹۰۰,۰۰۰ <span class="currency">تومان</span></span>
+                          </div>
+                        </div>
+                        <button class="add-to-cart">افزودن به سبد خرید</button>
+                      </div>
+                    </div>
+                
+                    <!-- کارت ۴ -->
+                    <div class="product-card">
+                      <div class="product-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                        <div class="image-placeholder">
+                <img src="./git hub culi img/Screenshot 2025-11-21 at 12-41-48 dastresi - Google Search.png" alt="">
+                        </div>
+                        <div class="discount-badge">۱۰٪</div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-title">ساعت هوشمند اپل واچ سری ۹</h3>
+                        <p class="product-description">GPS، صفحه نمایش Retina</p>
+                        <div class="price-section">
+                          <div class="price-container">
+                            <span class="original-price">۱۸,۰۰۰,۰۰۰ تومان</span>
+                            <span class="current-price">۱۶,۲۰۰,۰۰۰ <span class="currency">تومان</span></span>
+                          </div>
+                        </div>
+                        <button class="add-to-cart">افزودن به سبد خرید</button>
+                      </div>
+                    </div>
+                
+                    <!-- کارت ۵ -->
+                    <div class="product-card">
+                      <div class="product-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                        <div class="image-placeholder">
+                <img src="./git hub culi img/Screenshot 2025-11-21 at 12-41-48 dastresi - Google Search.png" alt="">
+                        </div>
+                        <div class="discount-badge">۲۵٪</div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-title">دوربین دیجیتال کانن EOS M50</h3>
+                        <p class="product-description">۲۴ مگاپیکسل، فیلمبرداری 4K</p>
+                        <div class="price-section">
+                          <div class="price-container">
+                            <span class="original-price">۳۲,۰۰۰,۰۰۰ تومان</span>
+                            <span class="current-price">۲۴,۰۰۰,۰۰۰ <span class="currency">تومان</span></span>
+                          </div>
+                        </div>
+                        <button class="add-to-cart">افزودن به سبد خرید</button>
+                      </div>
+                    </div>
+                
+                  </div>
+                
+                
+                                                                                                               

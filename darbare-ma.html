@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروشگاه اینترنتی دسترسی</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Tahoma', 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            direction: rtl;
+        }
+
+        .header {
+  width: 100%;
+  height: 135px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  .header__center {
+    width: 70%;
+    height: 100%;
+    .header__center__top {
+      width: 100%;
+      height: 80px;
+      display: flex;
+      flex-flow: row wrap;
+      .logo {
+        width: 10%;
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        padding-right: 5px;
+        box-sizing: border-box;
+        align-items: center;
+        img {
+          width: 96px;
+        }
+      }
+      .search {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .search__center {
+          width: 90%;
+          height: 40px;
+          background-color: rgb(247, 248, 250);
+          border-radius: 10px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-between;
+          .label {
+            width: 10%;
+            height: 100%;
+            font-size: 40px;
+          }
+          #search {
+            width: 90%;
+            height: 100%;
+            background-color: transparent;
+            border: unset;
+
+            outline: unset;
+            font-family: var(--shabnam);
+            font-size: 16px;
+            &::placeholder {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+      .more {
+        width: 35%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        column-gap: 15px;
+        padding-right: 20px;
+        box-sizing: border-box;
+        a {
+          text-decoration: none;
+          font-family: var(--shabnam);
+          color: #a3a3a3;
+          height: 100%;
+          padding: 0 5px;
+          line-height: 80px;
+          font-size: 14px;
+          transition: 300ms;
+          &:hover {
+            font-weight: bold;
+            color: var(--hoverText);
+          }
+        }
+      }
+      .login {
+        width: 25%;
+        height: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: end;
+        padding-left: 3px;
+        box-sizing: border-box;
+        column-gap: 15px;
+
+        .basket {
+          width: 45px;
+          height: 45px;
+          background-color: #f7f8fa;
+          border-radius: 15px;
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+            0 1px 2px 0 rgba(0, 0, 0, 0.06);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          color: #fe5f55;
+          transition: 300ms;
+          position: relative;
+          &:hover {
+            color: #0a295a;
+          }
+          .circle {
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background-color: #fe5f55;
+            color: whitesmoke;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: var(--perNum);
+            position: absolute;
+            right: -7px;
+            bottom: 32px;
+            box-shadow: 0 0 4px #2c5282;
+          }
+        }
+        .login__base {
+          width: 110px;
+          height: 45px;
+          background-color: #0a5abd;
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          transition: 300ms;
+          &:hover {
+            background-color: #0a295a;
+          }
+          span {
+            font-family: var(--shabnam);
+            color: whitesmoke;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+    .header__center__bottom {
+      width: 100%;
+      height: 55px;
+      .menu {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .menu__item {
+          width: fit-content;
+          height: 100%;
+          padding: 0 5px;
+          box-sizing: border-box;
+          line-height: 55px;
+          overflow: hidden;
+          &:hover {
+            overflow: visible;
+          }
+          &:hover .line {
+            right: 0;
+          }
+          .line {
+            width: 100%;
+            height: 3px;
+
+            position: relative;
+            right: -100%;
+            background-color: crimson;
+            transition: 200ms;
+          }
+          .menu__item__link {
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 0 5px;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: var(--shabnam);
+            font-size: 14px;
+            color: #8b8b8b;
+            font-weight: bold;
+            transition: 200ms;
+            &:hover {
+              color: crimson;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ 
+
+        /* Main Content */
+        .main-content {
+            max-width: 1400px;
+            margin: 40px auto;
+            padding: 0 50px;
+        }
+
+        .company-logo {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .company-logo img {
+            height: 100px;
+        }
+
+        .description {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            line-height: 2;
+            text-align: justify;
+            margin-bottom: 50px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        /* Customer Reviews Section */
+        .reviews-section {
+            margin: 50px 0;
+        }
+
+        .reviews-title {
+            text-align: center;
+            color: #0066CC;
+            font-size: 24px;
+            margin-bottom: 40px;
+            font-weight: bold;
+        }
+
+        .reviews-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+        .review-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+            min-width: 300px;
+            text-align: center;
+        }
+
+        .review-header {
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .review-header::before {
+            content: "💬 ";
+        }
+
+        .review-text {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        .review-nav {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 20px;
+            color: #666;
+        }
+
+      
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <!-- #region  wraper-->
+    <div class="wraper">
+        <!-- #region header-->
+        <header class="header">
+          <div class="header__center">
+            <div class="header__center__top">
+              <div class="logo">
+                <img src="./image/header/logo.png" alt="" />
+              </div>
+              <div class="search">
+                <div class="search__center">
+                  <label class="label" for="search">
+                    <img src="./image/header/search.svg" alt="" />
+                  </label>
+                  <input
+                    type="search"
+                    placeholder="جستجو محصولات"
+                    name="search"
+                    id="search"
+                  />
+                </div>
+              </div>
+              <div class="more">
+                <a href="./htmls/bashgah-moshtarian.html">باشگاه مشتریان</a>
+                <a href="./htmls/blog.html">بلاگ</a>
+                <a href="./htmls/ertebat.html"> ارتباط ما </a>
+                <a href="./htmls/darbare-ma.html"> درباره ما </a>
+              </div>
+              <div class="login">
+                <a href="#" class="basket">
+                  <div class="circle">0</div>
+                  <i class="fa-solid fa-cart-shopping fa-md"></i>
+                </a>
+                <a href="./htmls/sabt-nam.html" class="login__base">
+                  <span>ورود و ثبت‌نام</span>
+                </a>
+              </div>
+            </div>
+            <div class="header__center__bottom">
+              <nav class="menu">
+                <div class="menu__item">
+                  <a href="../index.html" class="menu__item__link">خانه</a>
+                  <div class="line"></div>
+                </div>
+                <div class="menu__item">
+                  <a href="./htmls/lavazem-janebi.html" class="menu__item__link"
+                    >لوازم جانبی موبایل و کامپیوتر
+                  </a>
+                </div>
+                <div class="menu__item">
+                  <a href="./htmls/kabl.html" class="menu__item__link"> کابل - مبدل - رابط</a>
+                </div>
+                <div class="menu__item">
+                  <a href="./htmls/tolid-mohtava.html" class="menu__item__link"> لوازم تولید محتوا </a>
+                </div>
+                <div class="menu__item">
+                  <a href="./htmls/shabake.html" class="menu__item__link"> لوازم شبکه </a>
+                </div>
+                <div class="menu__item">
+                  <a href="./htmls/consool-bazi.html" class="menu__item__link">
+                    کنسول بازی و لوازم جانبی
+                  </a>
+                </div>
+                <div class="menu__item">
+                  <a href="./htmls/khanegi-shakhsi.html" class="menu__item__link"> لوازم خانگی و شخصی </a>
+                </div>
+                <div class="menu__item">
+                  <a href="./htmls/berand-ha.html" class="menu__item__link"> برند‌ها </a>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="company-logo">
+            <img src="../image/header/logo.png" alt="">
+        </div>
+        
+        <div class="description">
+            <p>فروشگاه دسترسی فعالیت خود را از سال ۱۳۸۹ به صورت فروش فیزیکی کالا در حوزه لوازم جانبی کامپیوتر و موبایل در تهران شروع کرد و از سال ۱۳۹۸ از طریق پنج اینستاگرام وارد فروش آنلاین شد و به خاطر ارائه کالای اصلی و مشاوره های دقیق در بازه بسیار کوتاهی توانست اعتماد بسیاری از مشتریانش را جلب کند و سرانجام در سال ۱۳۹۹ فروش از طریق سایت را هم به فعالیت های خود اضافه کرد تا اینکه بتواند با بررسی دقیق کالاها انتخاب صحیح شما را به ارمغان آورد. و امروز دسترسی فعالیت خود را در زمینه آداپتور موبایل، کابل شارژ، پاوربانک، ساعت هوشمند، هدفری، و هدست، لوازم گیمینگ، بلندگو و شارژر، لوازم شبکه، تجهیزات ذخیره سازی، گیرنده دیجیتال و هزاران کمت جذاب ادامه میدهد.</p>
+        </div>
+
+        <!-- Customer Reviews -->
+        <div class="reviews-section">
+            <h2 class="reviews-title">نظر برخی از مشتریان</h2>
+            <div class="reviews-container">
+                <div class="review-nav">‹</div>
+                
+                <div class="review-card">
+                    <div class="review-header">آرتین لطفی</div>
+                    <div class="review-text">محصولات پیپسوس با کارائی محصود کنید</div>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-header">آرتین لطفی</div>
+                    <div class="review-text">محصولات پیپسوس با کارائی</div>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-header">علی عزیزی</div>
+                    <div class="review-text">لطفا اسپیکر بیشتر بیارید</div>
+                </div>
+                
+                <div class="review-nav">›</div>
+            </div>
+        </div>
+    </main>
+
